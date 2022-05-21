@@ -92,7 +92,7 @@ const Header = () => {
             </Form>
 
             {
-                (user === '')
+                (user == null)
                 ? <NotLoggedIn />
                 : <LoggedIn />
             }

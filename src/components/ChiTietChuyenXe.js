@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react"
-import { Col, Container, ListGroup, Row, Spinner, Table } from "react-bootstrap"
+import { Button, Col, Container, ListGroup, Row, Spinner, Table } from "react-bootstrap"
 import Moment from "react-moment"
 import Rating from "react-rating"
 import { useSelector } from "react-redux"
@@ -66,7 +66,7 @@ const ChiTietChuyenXe = () => {
     let url = `datVe`
     return (
         <>
-            <h1>Chuyen xe : {chuyenXeId}</h1>
+            <hr></hr>
             <Container>
                 {/* <Row> */}
                 <Table striped bordered hover>
@@ -98,11 +98,12 @@ const ChiTietChuyenXe = () => {
                         Giá vé: {chuyenXe.gia_ve} <br />
                         Tài xế: {chuyenXe.tai_xe.username} <br />
                     </h2>
-                    <Link to={url}>Đặt vé</Link>
+                    
                     <hr /> <hr />
                 </Row> */}
                 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-
+                <Link to={url}><Button>Đặt vé</Button></Link>
+                <hr />
                 <Row>
                     <Col>
                         {user != null && <ButtonLike chuyenxe={chuyenXe} like={like} />}

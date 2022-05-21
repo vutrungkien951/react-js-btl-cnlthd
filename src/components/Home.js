@@ -52,9 +52,6 @@ const Home = () => {
             <Row>
                 {chuyenXe.map(c => <Item chuyenXe={c} />)}
             </Row>
-            <Pagination>
-                {items}
-            </Pagination>
             </Container>
             
         </>

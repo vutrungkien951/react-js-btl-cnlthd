@@ -13,7 +13,6 @@ export const endpoints = {
     'datve': '/datve/',
     'like-chuyenxe': (chuyenXeId) => `/chuyenxe/${chuyenXeId}/like/`,
     'rate-chuyenxe' : (chuyenXeId) => `/chuyenxe/${chuyenXeId}/rating/`,
-    'chuyenxe-page': (pageNumber) => `/chuyenxe/?page=${pageNumber}/`
 }
 
 export const authAxios = () => axios.create({
